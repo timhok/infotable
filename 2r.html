@@ -2,21 +2,30 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="http://www.gismeteo.ru/static/css/informer2/gs_informerClient.min.css">
-<script src="https://www.gismeteo.ru/ajax/getInformer/?hash=6Evu3G53PoDN27" type="text/javascript"></script>
 </head>
+<style>
+#my-div
+{
+    width    : 560px;
+    height   : 195px;
+    overflow : hidden;
+    position : relative;
+}
+ 
+#my-iframe
+{
+    position : absolute;
+    top      : -650px;
+    left     : -33px;
+    width    : 980px;
+    height   : 1024px;
+}
+</style>
 <body>
-<table style="margin: -58px 0 0 2px;">
-<tr><td>
-<div id="gsInformerID-6Evu3G53PoDN27" class="gsInformer" style="width:260px;height:195px">
-  <div class="gsIContent">
-   <div id="cityLink">
-     <a href="http://www.gismeteo.ru/city/daily/4079/" target="_blank">Погода в Санкт-Петербурге</a>
-   </div>
-   <div class="gsLinks"></div>
-  </div>
+
+
+<div id="my-div">
+<iframe src="http://www.intellicast.com/local/weather.aspx?unit=C&location=RSXX0091" id="my-iframe" scrolling="no"></iframe>
 </div>
-</td></tr>
-</table>
 </body>
 </html>
